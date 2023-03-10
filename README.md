@@ -4,14 +4,14 @@
 
 - 상태 데이터 (할일)
   [
-  {
-  uid : string(날짜),
-  title : string(제목),
-  body : string(내용),
-  done : boolean(수행여부),
-  sticker : string(스티커이미지),
-  date : string(날짜),
-  }
+    {
+      uid : string(날짜),
+      title : string(제목),
+      body : string(내용),
+      done : boolean(수행여부),
+      sticker : string(스티커이미지),
+      date : string(날짜),
+    }
   ]
 
 - 기능 정의
@@ -32,8 +32,10 @@ sortTodo (sortType:string) Array<TodoType>
 
 - 컴포넌트 종류
 
+** 데이터의 상태를 전담해서 관리해줄 컴포넌트
 : 상태업데이트 역할(제어/컨트롤컴포넌트),
 src/AppContainer.tsx (상태관리 CRUD 전담)
+
 
 : 상태보여주기 역할(비제어/프레젠트컴포넌트),
 src/App.tsx (페이지 컴포넌트)
